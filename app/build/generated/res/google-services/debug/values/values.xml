@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">193947222254-fbfl1v9goe0gcfl9aikn9ak9e645h1ht.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://maniburguer.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">193947222254</string>
+    <string name="google_api_key" translatable="false">AIzaSyChdUylQV6RrCoS_xZwONQgsQBpYmVxhgo</string>
+    <string name="google_app_id" translatable="false">1:193947222254:android:7ffe5d686d73511c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyChdUylQV6RrCoS_xZwONQgsQBpYmVxhgo</string>
+    <string name="google_storage_bucket" translatable="false">maniburguer.appspot.com</string>
+    <string name="project_id" translatable="false">maniburguer</string>
+</resources>
