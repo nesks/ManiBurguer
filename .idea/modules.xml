@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ManiBurguer.iml" filepath="$PROJECT_DIR$/ManiBurguer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/administrativo/administrativo.iml" filepath="$PROJECT_DIR$/administrativo/administrativo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

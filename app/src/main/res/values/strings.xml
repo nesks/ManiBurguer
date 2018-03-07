@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ManiBurger</string>
+    <string name="facebook_app_id">1475661639198795</string>
+    <string name="fb_login_protocol_scheme">fb1475661639198795</string>
+    <string name="title_activity_main2"></string>
+
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar Menu</string>
+
+    <string name="carrinho">Carrinho</string>
+
+
+    <string name="mainPao">Pão de Hamburguer Artesanal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

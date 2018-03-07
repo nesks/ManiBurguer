@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="77cd75f9afdd1d58341bf9f785a6969acaa56de3">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7b15b4b56d58acc50e44fa537957cc4f5a7581f3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_3eba8cec8e764fd4772c3972b04a8be14e531995\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-11.0.4_545a341c3d3a9dc97816ab432b804e7ab388d9fb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-core\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="bc9ea2bc291bbebc83f5b160d115c699bddc4e16">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-core-4.27.0_e7bb6fae21fc26b69589aa5b650a10188f19ae42\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.3.1_de2414a2e40e3e567522762187b14c2a0384ee97\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-11.0.4_dbcf3d38589e7f6008d8d288ed43feefa79c8b86\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-11.0.4_6e798f89f51974d7bd65423a72cc6d96b21f9f6a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-common\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="252896ce41f2a84a2849e29235e66098be7d12ee">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-common-4.27.0_916e075283024625ac604c9bf2dc6a0dbd039427\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.3.1_821e7d666a332c3beebca9f0f9248ee7406decf4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-11.0.4_2a3cb663b52a399fec672101b10230cf936e2891\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.3.0_6e1c1337bc6a558d3f3c64040379404457744d8c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-11.0.4_adee63aead7f2c523233930240d4821e537e17c0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-11.0.4_15d544b4e1a8b2bfa22c86b03122b362bbad7abf\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.3.1_a6b83badd79233fe51a3a2bfa03c75f4a58bbf98\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-places\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="0d394688dd7030b83dea8eed3fa483410c24afe0">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-places-4.27.0_61f5b33faf922f6a9871b3c40c69f9077efcd13c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.3.1_dca1778e6af255d175c13bcb310b328aa829cabc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ind\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_dda69de04fb2360dfa94332ce59a874bfa75976b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.3.1_5dc7535b1993f78b7c7b4f29a4bc968d482e0ecb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="53e8932b1ac8c7dfc35cfeda1f9efbc9822ceaf3">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.27.0_6b941c781853c71f52c1c79343484b35cd1d4592\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.1.0_86043d23e0acc4b7b59bb6352f053386893cf84e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-login\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-login-4.27.0_bd4d366e9c563e10cd814ea01b207353f2635586\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_ddf81e0eff593ae230382984dfa828aa55804516\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_9d9d782f48ff8b26587536eb7c4eae45257af1f6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.3.1_7e01b2322c96c88c1c9bc5bd1cc25b6d57828e34\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="c0e6e25c55f0f1ac7cc90ee7cd009e1913573aea">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d1b854e77092db8edb60e51ad26b59b95b482675\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.3.1_8fdb78eb7e6f2415426559d708dd320a5f73d7d2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-11.0.4_cb89b1f90756de39571f3b9bfa4f6df5410ec70a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.3.1_760867ce24e8b5484c94b28f8d488ff1d67f48ea\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-11.0.4_656c8b134bf037a88a345a8eb4de8ad293731843\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.3.1_694aecf1b0dc731ef37d6dcff6971896dac21301\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-share\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="9a0c96cb2e74d3a6e692d920c9e03326e77f6429">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-share-4.27.0_862b1392a54b40632fb4961294134723a0789fbd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.3.1_b2821263497a07f73e38f7dfb829566f9b55ab9a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-messenger\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="2482bfd874e8b3927f4141105674ad392ff83698">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-messenger-4.27.0_6c6513972973337e0e59022472161d751666a808\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.3.1_20a06dcef253590c7e426ac78fb1ade68bf1da76\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.3.1_a6f3cd0727546e3d39abddc0ac35fa38de764ca1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-11.0.4_435a6725abfb13c1b3b7b40994d437b30f7fbb4c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-11.0.4_c59bf35c9dd14e103b87df7c5a8d6bf3b8215d4d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.facebook.android\facebook-applinks\4.27.0\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="82ea5a937ab84229fbd2f3fc8cf2a72cbdf0ee0f">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-applinks-4.27.0_a5977c3a6129b0ade660236321336f89161eaf58\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-11.0.4_9a834708b6d6eb68f67121f3b663ccd8123db822\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.3.1_b9b417295cde5fe0f816fa1368095b210eaca6f6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-11.0.4_61fe4b071a241f430e1463a9220d154715b4a217\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\exploded-aar\com.android.support\customtabs\25.3.1\jars\classes.jar"
+        jumboMode="true"
+        revision="26.0.1"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-25.3.1_82e3cc6ed861c21aa5a15d47cef05657cfe5dc9c\classes.dex" />
+    </item>
+
+</items>

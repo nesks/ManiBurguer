@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cinza</item>
+        <item name="colorPrimaryDark">@color/cinza</item>
+
+    </style>
+
+    <style name="botaoHamburguer" >
+        <item name="android:textColor">@color/mainLetra</item>
+        <item name="android:background">@color/mainBloco</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_margin">@dimen/mainMargem</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maniburguer.hamburgueria.maniburguer.LogInActivity"
+    android:background="@drawable/bg2login"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONECTAR COM GOOGLE"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/BTNgoogle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/BTNfacebook"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/logo_grande"
+            android:layout_marginLeft="@dimen/logo_grande"
+            android:background="@drawable/botao_google"
+            android:textColor="@color/amarelo"
+            />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONECTAR COM FACEBOOK"
+            android:id="@+id/BTNfacebook"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/logo_grande"
+            android:layout_marginLeft="@dimen/logo_grande"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/botao_facebook"
+            android:textColor="@color/branco"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:indeterminateTint="@color/branco"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="design e desenvolvimento por AZO Studio"
+            android:id="@+id/textView"
+            android:layout_below="@+id/BTNgoogle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/branco"
+            android:textSize="14dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "193947222254",
+    "firebase_url": "https://maniburguer.firebaseio.com",
+    "project_id": "maniburguer",
+    "storage_bucket": "maniburguer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193947222254:android:7ffe5d686d73511c",
+        "android_client_info": {
+          "package_name": "com.maniburguer.hamburgueria.maniburguer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193947222254-crl2mjbasq2sd5ii9q4dg2ima2mp1bau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maniburguer.hamburgueria.maniburguer",
+            "certificate_hash": "506895e0aa309f4d5588c3f8aae035370e3b2f2e"
+          }
+        },
+        {
+          "client_id": "193947222254-fbfl1v9goe0gcfl9aikn9ak9e645h1ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChdUylQV6RrCoS_xZwONQgsQBpYmVxhgo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193947222254-fbfl1v9goe0gcfl9aikn9ak9e645h1ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
