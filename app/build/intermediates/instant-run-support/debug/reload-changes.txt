@@ -1,3 +1,0 @@
-CHANGED,C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\maniburguer\hamburgueria\maniburguer\Classes\Ingrediente$override.class
-CHANGED,C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\maniburguer\hamburgueria\maniburguer\Classes\Estoque$override.class

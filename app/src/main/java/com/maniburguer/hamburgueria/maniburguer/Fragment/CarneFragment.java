@@ -1,12 +1,21 @@
 package com.maniburguer.hamburgueria.maniburguer.Fragment;
 
 
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.maniburguer.hamburgueria.maniburguer.Classes.Estoque;
@@ -24,6 +33,7 @@ public class CarneFragment extends Fragment {
     private Button carneBovina150;
     private Ingrediente in;
     private View v;
+    private TableLayout sv;
 
     public CarneFragment() {
         // Required empty public constructor
@@ -36,7 +46,48 @@ public class CarneFragment extends Fragment {
         // Inflate the layout for this fragment
         v=inflater.inflate(R.layout.fragment_carne, container, false);
 
+      sv = (TableLayout) v.findViewById(R.id.tl);
 
+        for(int i=0;i<Estoque.getCarne().size();i++) {
+
+            TableRow row = new TableRow(getContext());
+
+
+                for(int j=0;j<2;j++) {
+
+                    final RelativeLayout newlayout = new RelativeLayout(getContext());
+                    ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                    newlayout.setPadding(5,5,5,5);
+
+                    final ImageView imageview = new ImageView(getContext());
+                    imageview.setLayoutParams(lp);
+                    imageview.setImageResource(R.drawable.sandwich);
+
+                    imageview.setBackgroundResource(R.color.mainBloco);
+
+                    TextView nome = new TextView(getContext());
+                    nome.setText(Estoque.getCarne().get(i+j).getNome());
+
+
+                    newlayout.addView(imageview);
+                    newlayout.addView(nome);
+
+                    newlayout.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+                                imageview.setBackgroundResource(R.color.amarelo);
+
+                        }
+                    });
+                    row.addView(newlayout);
+
+                }
+            i++;
+
+            sv.addView(row);
+        }
+/*
         carneBovina100 = (Button) v.findViewById(R.id.cBovina100);
         carneBovina100.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,7 +106,7 @@ public class CarneFragment extends Fragment {
                 troca(carneBovina150,in,"150g");
             }
         });
-
+*/
 
         return v;
     }
