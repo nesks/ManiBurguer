@@ -4,30 +4,44 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="4209565577209"
-    token="-4983580043256951036" >
+    timestamp="16307452748287"
+    token="-4983580043256951036"
+    verifier="METHOD_DELETED" >
 
     <task
         name="javac"
-        duration="13003" />
+        duration="7968" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="7340" />
+        duration="482" />
     <task
         name="verifier"
-        duration="2198" />
+        duration="348" />
 
     <artifact
-        location="C:\Users\indigente\Desktop\ManiBurguer\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+        type="DEX" />
+    <artifact
+        location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+        type="DEX" />
 
-    <build timestamp="4209565577209" >
+    <build timestamp="13511723289432" >
         <artifact
             location="C:\Users\indigente\Desktop\ManiBurguer\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="16307452748287"
+        verifier="METHOD_DELETED" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

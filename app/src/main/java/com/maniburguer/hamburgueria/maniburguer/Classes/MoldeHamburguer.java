@@ -2,16 +2,15 @@ package com.maniburguer.hamburgueria.maniburguer.Classes;
 
 import java.util.ArrayList;
 
-/**
- * Created by ind on 27/12/2017.
- */
+
 public class MoldeHamburguer {
 
     private static Ingrediente pao;
-    private static ArrayList<Ingrediente> carne = new ArrayList<Ingrediente>();
-    private static ArrayList<Ingrediente> salada= new ArrayList<Ingrediente>();
-    private static ArrayList<Ingrediente> acrescimos= new ArrayList<Ingrediente>();
-    private static ArrayList<Ingrediente> molhos= new ArrayList<Ingrediente>();
+    private static ArrayList<Ingrediente> carne = new ArrayList<>();
+    private  ArrayList<Ingrediente> queijo = new ArrayList<>();
+    private static ArrayList<Ingrediente> salada= new ArrayList<>();
+    private static ArrayList<Ingrediente> acrescimos= new ArrayList<>();
+    private static ArrayList<Ingrediente> molhos= new ArrayList<>();
     private static Double preco;
 
 
@@ -34,40 +33,6 @@ public class MoldeHamburguer {
         preco = 0.0;
     }
 
-
-    public static  void adicionarCarne(Ingrediente x){
-        carne.add(x);
-        preco += x.getPreco();
-    }
-    public  static void removeCarne(Ingrediente x){
-        carne.remove(x);
-        preco -= x.getPreco();
-    }
-
-    public  static void adicionarSalada(Ingrediente x){
-        salada.add(x);
-        preco += x.getPreco();
-    }
-    public static  void removeSalada(Ingrediente x){
-        salada.remove(x);
-        preco -= x.getPreco();
-    }
-    public static  void adicionarAcrescimos(Ingrediente x){
-        acrescimos.add(x);
-        preco += x.getPreco();
-    }
-    public  static void removeAcrescimos(Ingrediente x){
-        acrescimos.remove(x);
-        preco -= x.getPreco();
-    }
-    public  static void adicionarMolho(Ingrediente x){
-        molhos.add(x);
-        preco += x.getPreco();
-    }
-    public  static void removeMolho(Ingrediente x){
-        molhos.remove(x);
-        preco -= x.getPreco();
-    }
 
     public  static Ingrediente getPao() {
         return pao;
@@ -113,7 +78,10 @@ public class MoldeHamburguer {
         return preco;
     }
 
-    public  static void setPreco(Double p) {
-        preco = p;
+    public  static void adicionaPreco(Double p) {
+        preco += p;
+    }
+    public  static void removePreco(Double p) {
+        preco -= p;
     }
 }
