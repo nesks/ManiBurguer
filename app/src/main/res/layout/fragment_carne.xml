@@ -13,7 +13,7 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/tl"
             >
             </TableLayout>
@@ -58,4 +58,14 @@
 
         -->
     </ScrollView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:id="@+id/preco"
+        />
+
 </FrameLayout>

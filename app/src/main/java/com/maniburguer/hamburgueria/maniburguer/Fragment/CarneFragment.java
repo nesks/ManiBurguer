@@ -30,7 +30,7 @@ import com.maniburguer.hamburgueria.maniburguer.R;
 public class CarneFragment extends Fragment {
 
     private View v;
-    private ScrollView sc;
+    private TableLayout sc;
 
     public CarneFragment() {
         // Required empty public constructor
@@ -43,7 +43,7 @@ public class CarneFragment extends Fragment {
         // Inflate the layout for this fragment
         v=inflater.inflate(R.layout.fragment_carne, container, false);
 
-      sc = (ScrollView) v.findViewById(R.id.scroll);
+      sc = (TableLayout) v.findViewById(R.id.tl);
 
             sc.addView(MonteSeuHamburguer.distribuiIngrediente(
                     Estoque.getCarne(),

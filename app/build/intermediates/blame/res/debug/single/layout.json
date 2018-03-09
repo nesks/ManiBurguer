@@ -12,32 +12,32 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_carne.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\fragment_carne.xml"
+    },
+    {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_layout_tab_text.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main2.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\content_main2.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fechados.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\activity_fechados.xml"
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fechados.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\activity_fechados.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
@@ -128,12 +128,12 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-common\\4.27.0\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-common\\4.27.0\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pao.xml",
@@ -248,12 +248,12 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
