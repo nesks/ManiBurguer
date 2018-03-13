@@ -9,19 +9,20 @@ import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
 import com.maniburguer.hamburgueria.maniburguer.Fragment.CarneFragment;
 import com.maniburguer.hamburgueria.maniburguer.Fragment.PaoFragment;
 import com.maniburguer.hamburgueria.maniburguer.Fragment.QueijoFragment;
+import com.maniburguer.hamburgueria.maniburguer.Fragment.SaladaFragment;
 
 /**
  * Created by ind on 07/01/2018.
  */
 public class TabsAdapter extends FragmentStatePagerAdapter {
 private Context context;
-    private String[] abas = new String[]{"PÃO","CARNE","QUEIJO"};
+    private String[] abas = new String[]{"PÃO","CARNE","QUEIJO","SALADA"};
     private MoldeHamburguer moldeHamburguer = new MoldeHamburguer();
 
     private Fragment paoFragment = new PaoFragment();
     private Fragment carneFragment = new CarneFragment();
     private Fragment queijoFraqment = new QueijoFragment();
-
+    private Fragment saladaFragment = new SaladaFragment();
 
 
     public TabsAdapter(FragmentManager fm, Context c) {
@@ -43,6 +44,8 @@ private Context context;
             case 2:
                 fragment = queijoFraqment;
                 break;
+            case 3:
+                fragment = saladaFragment;
         }
     return fragment;
     }

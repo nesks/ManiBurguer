@@ -30,7 +30,6 @@ import com.maniburguer.hamburgueria.maniburguer.R;
 public class CarneFragment extends Fragment {
 
     private View v;
-    private TableLayout sc;
 
     public CarneFragment() {
         // Required empty public constructor
@@ -43,12 +42,7 @@ public class CarneFragment extends Fragment {
         // Inflate the layout for this fragment
         v=inflater.inflate(R.layout.fragment_carne, container, false);
 
-      sc = (TableLayout) v.findViewById(R.id.tl);
-
-            sc.addView(MonteSeuHamburguer.distribuiIngrediente(
-                    Estoque.getCarne(),
-                    MoldeHamburguer.getCarne(),
-                    v));
+            MonteSeuHamburguer.distribuiIngrediente(Estoque.getCarne(),MoldeHamburguer.getCarne(),v);
 
         return v;
     }

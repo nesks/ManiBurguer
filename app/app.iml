@@ -151,8 +151,8 @@
     <orderEntry type="library" exported="" name="firebase-iid-11.0.4" level="project" />
     <orderEntry type="library" exported="" name="transition-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="design-25.3.1" level="project" />
-    <orderEntry type="library" exported="" name="core-3.3.0" level="project" />
     <orderEntry type="library" exported="" name="bolts-tasks-1.4.0" level="project" />
+    <orderEntry type="library" exported="" name="core-3.3.0" level="project" />
     <orderEntry type="library" exported="" name="support-core-ui-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="customtabs-25.3.1" level="project" />
