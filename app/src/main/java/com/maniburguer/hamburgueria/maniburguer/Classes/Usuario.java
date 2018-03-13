@@ -16,7 +16,7 @@ public class Usuario {
 
     //firebase
     private static DatabaseReference databaseReferencia = FirebaseDatabase.getInstance().getReference();
-    private static DatabaseReference idReferencia = databaseReferencia.child("pedidos").child("date");
+    private static DatabaseReference pedidoReferencia = databaseReferencia.child("pedidos");
     private DatabaseReference nomeDoHamburguerReferencia;
 
 
@@ -90,11 +90,8 @@ public class Usuario {
     }
 
     public static void enviarHamburguers(){
-        idReferencia = idReferencia.child(nome);
-        idReferencia.setValue(id);
-        idReferencia.child("endereco").setValue(endereco);
-        for(int i=0; i<carrinho.size();i++){
-            idReferencia.child("Maniburguer"+(i+1)).setValue(carrinho.get(i));
+         for(int i=0; i<carrinho.size();i++){
+            pedidoReferencia.child(carrinho.get(i).getNome()).setValue(carrinho.get(i));
         }
 
     }

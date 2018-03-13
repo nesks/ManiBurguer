@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Hamburguer {
 
+        private String nome;
+
         private  Ingrediente pao;
         private  ArrayList<Ingrediente> carne = new ArrayList<>();
          private  ArrayList<Ingrediente> queijo = new ArrayList<>();
@@ -14,6 +16,7 @@ public class Hamburguer {
 
 
         public Hamburguer(){
+            nome = MoldeHamburguer.getNome();
             pao = MoldeHamburguer.getPao();
             carne = MoldeHamburguer.getCarne();
             queijo = MoldeHamburguer.getQueijo();
@@ -21,6 +24,7 @@ public class Hamburguer {
             acrescimos = MoldeHamburguer.getAcrescimos();
             molhos = MoldeHamburguer.getMolhos();
             preco = MoldeHamburguer.getPreco();
+            MoldeHamburguer.apagaTudo();
         }
 
         public   Ingrediente getPao() {
@@ -34,9 +38,11 @@ public class Hamburguer {
             return carnes;
         }
 
+            public String getNome() {
+                return nome;
+            }
 
-
-       public   ArrayList<Ingrediente> getSalada() {
+         public   ArrayList<Ingrediente> getSalada() {
             return salada;
         }
 

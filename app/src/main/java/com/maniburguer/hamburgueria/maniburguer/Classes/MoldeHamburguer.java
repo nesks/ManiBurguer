@@ -1,9 +1,13 @@
 package com.maniburguer.hamburgueria.maniburguer.Classes;
 
+import android.widget.Switch;
+
 import java.util.ArrayList;
 
 
 public class MoldeHamburguer {
+
+    private static String nome;
 
     private static Ingrediente pao;
     private static ArrayList<Ingrediente> carne = new ArrayList<>();
@@ -14,14 +18,26 @@ public class MoldeHamburguer {
     private static Double preco;
 
 
-    public MoldeHamburguer(){
-        preco=0.0;
+    public static void adicionarIngrediente(ArrayList<Ingrediente> x , Ingrediente y){
+        if(x.equals(carne)) {
+            carne.add(y);
+        }else if(x.equals(queijo)){
+            queijo.add(y);
+        }else if(x.equals(salada)){
+            salada.add(y);
+        }else if(x.equals(acrescimos)){
+            acrescimos.add(y);
+        }else if(x.equals(molhos)){
+            molhos.add(y);
+        }
     }
 
-    public static void adicionarPao(Ingrediente x){
+    public static void removerIngrediente(ArrayList<Ingrediente> x , Ingrediente y){
+        x.remove(y);
+    }
 
-        pao = x;
-        preco += x.getPreco();
+    public MoldeHamburguer(){
+        preco=0.0;
     }
 
     public  static void apagaTudo(){
@@ -33,6 +49,13 @@ public class MoldeHamburguer {
         preco = 0.0;
     }
 
+    public static String getNome() {
+        return nome;
+    }
+
+    public static void setNome(String nome) {
+        MoldeHamburguer.nome = nome;
+    }
 
     public  static Ingrediente getPao() {
         return pao;
@@ -46,42 +69,20 @@ public class MoldeHamburguer {
         return carne;
     }
 
-    public  static void setCarne(ArrayList<Ingrediente> c) {
-       carne = c;
-    }
-
     public static ArrayList<Ingrediente> getQueijo() {
         return queijo;
     }
 
-    public void setQueijo(ArrayList<Ingrediente> queijo) {
-        this.queijo = queijo;
-    }
-
-
-
     public static  ArrayList<Ingrediente> getSalada() {
         return salada;
-    }
-
-    public  static void setSalada(ArrayList<Ingrediente> s) {
-        salada = s;
     }
 
     public  static ArrayList<Ingrediente> getAcrescimos() {
         return acrescimos;
     }
 
-    public  static void setAcrescimos(ArrayList<Ingrediente> a) {
-        acrescimos = a;
-    }
-
     public  static ArrayList<Ingrediente> getMolhos() {
         return molhos;
-    }
-
-    public  static void setMolhos(ArrayList<Ingrediente> m) {
-        molhos = m;
     }
 
     public  static Double getPreco() {

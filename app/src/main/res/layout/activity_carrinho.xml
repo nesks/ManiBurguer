@@ -22,15 +22,15 @@
         android:id="@+id/scroll"
         >
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/minha_lista">
-        </ListView>
-
     </ScrollView>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Compra"
+        android:id="@+id/btEnviar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

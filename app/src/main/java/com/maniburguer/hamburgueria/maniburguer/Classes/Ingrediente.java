@@ -7,6 +7,7 @@ public class Ingrediente {
 
     private String nome;
     private Double preco;
+
     public String getNome() {
         return nome;
     }

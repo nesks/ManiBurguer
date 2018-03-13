@@ -9,6 +9,22 @@
         android:layout_height="wrap_content"
         android:text="Enviar"
         android:id="@+id/btEnviar"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTNome"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do seu hamburguer :)"
+        android:layout_below="@+id/eTNome"
+        android:id="@+id/textView2"
         android:layout_gravity="center" />
+
 
 </FrameLayout>

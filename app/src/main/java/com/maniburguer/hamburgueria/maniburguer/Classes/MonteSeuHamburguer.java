@@ -22,7 +22,9 @@ public class MonteSeuHamburguer {
 
 
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+
+
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public static void distribuiIngrediente(final ArrayList<Ingrediente> ingredientes, final ArrayList<Ingrediente> moldeHamburguer, View v){
 
         TableLayout tableLayout = new TableLayout(v.getContext());
@@ -35,53 +37,68 @@ public class MonteSeuHamburguer {
             LinearLayout linearLayout = new LinearLayout(v.getContext());
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             linearLayout.setLayoutParams(layoutParams);
-            linearLayout.setOrientation(LinearLayout.VERTICAL);
+            linearLayout.setOrientation(LinearLayout.HORIZONTAL);
 
             //configurar  2 relativelayout (cada bloco de ingrediente)
-            final Button[] buttons = new Button[2];
-            ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+            final RelativeLayout[] newlayout = new RelativeLayout[2];
+            LinearLayout.LayoutParams newlayoutLP = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT,0.5f);
 
-            for (int j = 0; j < 2; j++)
-                if (i + j < ingredientes.size()) {
 
-                    buttons[j] = new Button(v.getContext());
-                    buttons[j].setLayoutParams(lp);
+            for (int j = 0; j < 2; j++) {
 
-                    //cria e configura cada imagem dos ingredientes q fica no bloco
-                    buttons[j].setBackground(v.getResources().getDrawable(R.drawable.sandwich));
+                if(i+j<ingredientes.size()){
+
+                    newlayout[j] = new RelativeLayout(v.getContext());
+                    newlayout[j].setLayoutParams(newlayoutLP);
 
                     //VERIFICA SE ALGO JA FOI SELECIONADO
                     if (moldeHamburguer.contains(ingredientes.get(i + j))) {
-                        buttons[j].setBackgroundColor(v.getResources().getColor(R.color.amarelo));
+                        newlayout[j].setBackgroundResource(R.color.amarelo);
                     } else {
-                        buttons[j].setBackgroundColor(v.getResources().getColor(R.color.mainBloco));
+                        newlayout[j].setBackgroundResource(R.color.mainBloco);
                     }
 
+                    //cria e configura cada imagem dos ingredientes q fica no bloco
+                    final ImageView imageview = new ImageView(v.getContext());
+                    imageview.setImageResource(R.drawable.sandwich);
 
-                    //CRIA E CONFIGURA O NOME E PRECO DO INGREDIENTE
-                    buttons[j].setText(ingredientes.get(i + j).getNome()+" R$"+ingredientes.get(i+j).getPreco());
 
+                    //CRIA E CONFIGURA O NOME DO INGREDIENTE
+                    TextView nome = new TextView(v.getContext());
+                    nome.setText(ingredientes.get(i + j).getNome());
+                    nome.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
+
+                    //CRIA E CONFIGURA O PREÇO DO INGREDIENTE
+                    TextView preco = new TextView(v.getContext());
+                    preco.setText(String.valueOf(ingredientes.get(i + j).getPreco()));
+                    preco.setTextAlignment(View.TEXT_ALIGNMENT_GRAVITY);
+
+                    //ADICIONA TUDO NO BLOCO
+                    newlayout[j].addView(imageview);
+                    newlayout[j].addView(nome);
+                    newlayout[j].addView(preco);
 
                     final int finalJ = j;
                     final int finalI = i;
-                    buttons[j].setOnClickListener(new View.OnClickListener() {
+                    newlayout[j].setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             if (moldeHamburguer.contains(ingredientes.get(finalI + finalJ))) {
-                                buttons[finalJ].setBackgroundColor(v.getResources().getColor(R.color.mainBloco));
-                                moldeHamburguer.remove(ingredientes.get(finalI + finalJ));
+                                newlayout[finalJ].setBackgroundResource(R.color.mainBloco);
+                                MoldeHamburguer.removerIngrediente(moldeHamburguer, ingredientes.get(finalI + finalJ));
                                 MoldeHamburguer.removePreco(ingredientes.get(finalI + finalJ).getPreco());
                             } else {
-                                buttons[finalJ].setBackgroundColor(v.getResources().getColor(R.color.amarelo));
-                                moldeHamburguer.add(ingredientes.get(finalI + finalJ));
+                                newlayout[finalJ].setBackgroundResource(R.color.amarelo);
+                                MoldeHamburguer.adicionarIngrediente(moldeHamburguer, ingredientes.get(finalI + finalJ));
                                 MoldeHamburguer.adicionaPreco(ingredientes.get(finalI + finalJ).getPreco());
                             }
                             atualizaPreco(precoAtualizado);
 
                         }
                     });
-                    linearLayout.addView(buttons[j]);
+                    linearLayout.addView(newlayout[j]);
                 }
+            }
             i++;
 
             tableLayout.addView(linearLayout);
