@@ -4,35 +4,80 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="8008969849546"
-    token="-4983580043256951036" >
+    timestamp="10106754950666"
+    token="-4983580043256951036"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="13484" />
+        duration="12961" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="4047" />
     <task
         name="instant-run-transform"
-        duration="116" />
+        duration="3997" />
     <task
         name="verifier"
-        duration="67" />
+        duration="26" />
 
     <artifact
-        location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-        type="DEX" />
+        location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build timestamp="6907783163778" >
         <artifact
             location="C:\Users\indigente\Desktop\ManiBurguer\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="8008969849546" >
+    <build
+        timestamp="9079165751726"
+        verifier="FIELD_TYPE_CHANGE" >
         <artifact
             location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="9320059688129"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\builds\debug\9320059688129\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9434983552816"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\builds\debug\9434983552816\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9647106897940"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\builds\debug\9647106897940\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9721318813832"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\builds\debug\9721318813832\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="9959203892433"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\builds\debug\9959203892433\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="10106754950666"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
