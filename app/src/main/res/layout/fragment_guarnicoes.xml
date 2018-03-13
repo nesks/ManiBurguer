@@ -4,10 +4,33 @@
     android:layout_height="match_parent"
     tools:context="com.maniburguer.hamburgueria.maniburguer.Fragment.GuarnicoesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/scroll"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll"
+            >
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/preco"
+        />
+
 
 </FrameLayout>

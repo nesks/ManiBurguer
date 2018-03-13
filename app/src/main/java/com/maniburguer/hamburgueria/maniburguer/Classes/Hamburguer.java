@@ -16,6 +16,7 @@ public class Hamburguer {
         public Hamburguer(){
             pao = MoldeHamburguer.getPao();
             carne = MoldeHamburguer.getCarne();
+            queijo = MoldeHamburguer.getQueijo();
             salada = MoldeHamburguer.getSalada();
             acrescimos = MoldeHamburguer.getAcrescimos();
             molhos = MoldeHamburguer.getMolhos();
@@ -32,6 +33,8 @@ public class Hamburguer {
                 carnes.add(carne.get(x).getNome());
             return carnes;
         }
+
+
 
        public   ArrayList<Ingrediente> getSalada() {
             return salada;

@@ -7,7 +7,7 @@ public class MoldeHamburguer {
 
     private static Ingrediente pao;
     private static ArrayList<Ingrediente> carne = new ArrayList<>();
-    private  ArrayList<Ingrediente> queijo = new ArrayList<>();
+    private static  ArrayList<Ingrediente> queijo = new ArrayList<>();
     private static ArrayList<Ingrediente> salada= new ArrayList<>();
     private static ArrayList<Ingrediente> acrescimos= new ArrayList<>();
     private static ArrayList<Ingrediente> molhos= new ArrayList<>();
@@ -49,6 +49,16 @@ public class MoldeHamburguer {
     public  static void setCarne(ArrayList<Ingrediente> c) {
        carne = c;
     }
+
+    public static ArrayList<Ingrediente> getQueijo() {
+        return queijo;
+    }
+
+    public void setQueijo(ArrayList<Ingrediente> queijo) {
+        this.queijo = queijo;
+    }
+
+
 
     public static  ArrayList<Ingrediente> getSalada() {
         return salada;

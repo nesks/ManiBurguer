@@ -29,38 +29,37 @@ public class MonteSeuHamburguer {
         for(int i=0;i<ingredientes.size();i++) {
 
             TableRow row = new TableRow(v.getContext());
-            TableRow.LayoutParams rowLP = new TableRow.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-            rowLP.bottomMargin = 5;
-            row.setLayoutParams(rowLP);
 
             //configurar  2 relativelayout (cada bloco de ingrediente)
-            final FrameLayout[] newlayout = new FrameLayout[2];
-            FrameLayout.LayoutParams newlayoutLP = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+            final LinearLayout[] newlayout = new LinearLayout[2];
 
-            for(int j=0;j<2;j++) {
-                newlayout[j] = new FrameLayout(v.getContext());
+
+            for (int j = 0; j < 2; j++) {
+
+                if(i+j<ingredientes.size()){
+
+                newlayout[j] = new LinearLayout(v.getContext());
                 newlayout[j].setBackgroundResource(R.color.mainBloco);
-                // newlayout[j].setLayoutParams(newlayoutLP); erro <-
 
                 //cria e configura cada imagem dos ingredientes q fica no bloco
                 final ImageView imageview = new ImageView(v.getContext());
                 imageview.setImageResource(R.drawable.sandwich);
 
                 //VERIFICA SE ALGO JA FOI SELECIONADO
-                if(moldeHamburguer.contains(ingredientes.get(i+j))){
+                if (moldeHamburguer.contains(ingredientes.get(i + j))) {
                     newlayout[j].setBackgroundResource(R.color.amarelo);
-                }else{
+                } else {
                     newlayout[j].setBackgroundResource(R.color.mainBloco);
                 }
 
 
                 //CRIA E CONFIGURA O NOME DO INGREDIENTE
                 TextView nome = new TextView(v.getContext());
-                nome.setText(ingredientes.get(i+j).getNome());
+                nome.setText(ingredientes.get(i + j).getNome());
 
                 //CRIA E CONFIGURA O PREÇO DO INGREDIENTE
                 TextView preco = new TextView(v.getContext());
-                preco.setText(String.valueOf(ingredientes.get(i+j).getPreco()));
+                preco.setText(String.valueOf(ingredientes.get(i + j).getPreco()));
 
                 //ADICIONA TUDO NO BLOCO
                 newlayout[j].addView(imageview);
@@ -72,29 +71,28 @@ public class MonteSeuHamburguer {
                 newlayout[j].setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if(moldeHamburguer.contains(ingredientes.get(finalI + finalJ))) {
+                        if (moldeHamburguer.contains(ingredientes.get(finalI + finalJ))) {
                             newlayout[finalJ].setBackgroundResource(R.color.mainBloco);
                             moldeHamburguer.remove(ingredientes.get(finalI + finalJ));
                             MoldeHamburguer.removePreco(ingredientes.get(finalI + finalJ).getPreco());
-                              }else{
+                        } else {
                             newlayout[finalJ].setBackgroundResource(R.color.amarelo);
                             moldeHamburguer.add(ingredientes.get(finalI + finalJ));
                             MoldeHamburguer.adicionaPreco(ingredientes.get(finalI + finalJ).getPreco());
-                             }
+                        }
                         atualizaPreco(precoAtualizado);
 
                     }
                 });
-
+                row.addView(newlayout[j]);
             }
-            row.setWeightSum(1f);
-            row.addView(newlayout[0]);
-            row.addView(newlayout[1]);
-
+        }
             i++;
 
             tableLayout.addView(row);
         }
+
+
         LinearLayout ll;
         ll = (LinearLayout) v.findViewById(R.id.ll);
         ll.addView(tableLayout);
