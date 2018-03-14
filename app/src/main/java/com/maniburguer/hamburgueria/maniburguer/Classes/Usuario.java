@@ -13,21 +13,25 @@ import java.util.ArrayList;
  */
 public class Usuario {
 
-
-    //firebase
-    private static DatabaseReference databaseReferencia = FirebaseDatabase.getInstance().getReference();
-    private static DatabaseReference pedidoReferencia = databaseReferencia.child("pedidos");
-
-
-
     private static String nome;
     private static String email;
     private static Uri photoURL;
     private static String id;
     private static Endereco endereco;
-
-
     private static ArrayList<Hamburguer> carrinho = new ArrayList<Hamburguer>();
+    private static Double precoGeral;
+
+    public Usuario(){
+
+    }
+
+    public void atualizarPrecoGeral(){
+        int i;
+        for(i=0;i<carrinho.size();i++){
+            precoGeral += carrinho.get(i).getDados().getPrecoDoHamburguer();
+        }
+
+    }
 
     public Usuario(String nome, String email, Uri photoURL, String id) {
         this.nome = nome;
@@ -40,24 +44,12 @@ public class Usuario {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public static String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public static Uri getPhotoURL() {
         return photoURL;
-    }
-
-    public void setPhotoURL(Uri photoURL) {
-        this.photoURL = photoURL;
     }
 
     public static String getId() {
@@ -68,20 +60,16 @@ public class Usuario {
         this.id = id;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
     public static ArrayList<Hamburguer> getCarrinho() {
         return carrinho;
     }
 
-    public void removeHamburguer(Hamburguer hamb){
-        carrinho.remove(hamb);
+    public static Double getPrecoGeral() {
+        return precoGeral;
+    }
+
+    public static Endereco getEndereco() {
+        return endereco;
     }
 
     public static void addHamburguer(Hamburguer hamb){
@@ -89,14 +77,7 @@ public class Usuario {
         Log.d("FRAGMENT", "adicionarHamburguer: "+carrinho.size());
     }
 
-    public static void enviarHamburguers(){
-        Log.i("carrinho", "enviado");
 
-for(int i=0; i<carrinho.size();i++){
-            pedidoReferencia.child(carrinho.get(i).getNome()).setValue(carrinho.get(i));
-        }
-
-    }
 
 
 }

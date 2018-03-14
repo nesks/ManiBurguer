@@ -8,6 +8,7 @@ import android.widget.ScrollView;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.maniburguer.hamburgueria.maniburguer.Classes.EnviarCarrinho;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Hamburguer;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Usuario;
 
@@ -29,7 +30,7 @@ public class CarrinhoActivity extends AppCompatActivity {
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario.enviarHamburguers();
+                EnviarCarrinho.enviarHamburguers();
             }
         });
 

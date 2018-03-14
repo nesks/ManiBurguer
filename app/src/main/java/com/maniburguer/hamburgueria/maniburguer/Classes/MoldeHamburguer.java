@@ -8,8 +8,6 @@ import java.util.ArrayList;
 
 public class MoldeHamburguer {
 
-    private static String nome;
-
     private static Ingrediente pao;
     private static ArrayList<Ingrediente> carne = new ArrayList<>();
     private static  ArrayList<Ingrediente> queijo = new ArrayList<>();
@@ -20,9 +18,7 @@ public class MoldeHamburguer {
 
 
     public static void adicionarIngrediente(ArrayList<Ingrediente> x , Ingrediente y){
-        Log.i("EJOR","entrou no adicionarIngrediente com o ingrediente "+ y.getNome());
         if(x==getCarne()) {
-            Log.i("EJOR","entrou no getCarne() e foi add "+ y.getNome());
             carne.add(y);
         }else if(x==getQueijo()){
             queijo.add(y);
