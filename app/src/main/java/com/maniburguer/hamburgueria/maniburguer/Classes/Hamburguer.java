@@ -1,28 +1,31 @@
 package com.maniburguer.hamburgueria.maniburguer.Classes;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 
 public class Hamburguer {
 
         private String nome;
-
         private  Ingrediente pao;
-        private  ArrayList<Ingrediente> carne = new ArrayList<>();
-         private  ArrayList<Ingrediente> queijo = new ArrayList<>();
-        private  ArrayList<Ingrediente> salada= new ArrayList<>();
-        private  ArrayList<Ingrediente> acrescimos= new ArrayList<>();
-        private  ArrayList<Ingrediente> molhos= new ArrayList<>();
+        private  ArrayList<Ingrediente> carne = new ArrayList<Ingrediente>();
+        private  ArrayList<Ingrediente> queijo = new ArrayList<Ingrediente>();
+        private  ArrayList<Ingrediente> salada= new ArrayList<Ingrediente>();
+        private  ArrayList<Ingrediente> acrescimos= new ArrayList<Ingrediente>();
+        private  ArrayList<Ingrediente> molhos= new ArrayList<Ingrediente>();
         private  Double preco;
 
+    public Hamburguer() {
+    }
 
-        public Hamburguer(){
-            nome = MoldeHamburguer.getNome();
+    public Hamburguer(String nome){
+            this.nome = nome;
             pao = MoldeHamburguer.getPao();
-            carne = MoldeHamburguer.getCarne();
-            queijo = MoldeHamburguer.getQueijo();
-            salada = MoldeHamburguer.getSalada();
-            acrescimos = MoldeHamburguer.getAcrescimos();
-            molhos = MoldeHamburguer.getMolhos();
+            this.carne.addAll(MoldeHamburguer.getCarne());
+            queijo.addAll(MoldeHamburguer.getQueijo());
+            salada.addAll(MoldeHamburguer.getSalada());
+            acrescimos.addAll(MoldeHamburguer.getAcrescimos());
+            molhos.addAll(MoldeHamburguer.getMolhos());
             preco = MoldeHamburguer.getPreco();
             MoldeHamburguer.apagaTudo();
         }
@@ -31,11 +34,8 @@ public class Hamburguer {
             return pao;
         }
 
-        public   ArrayList<String> getCarne() {
-            ArrayList<String> carnes = new ArrayList<>();
-            for(int x=0;x<carne.size();x++)
-                carnes.add(carne.get(x).getNome());
-            return carnes;
+        public   ArrayList<Ingrediente> getCarne() {
+            return carne;
         }
 
             public String getNome() {
@@ -54,11 +54,12 @@ public class Hamburguer {
             return molhos;
         }
 
-        public   Double getPreco() {
+    public ArrayList<Ingrediente> getQueijo() {
+        return queijo;
+    }
+
+    public   Double getPreco() {
             return preco;
         }
-
-
-
 
 }

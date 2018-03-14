@@ -1,5 +1,6 @@
 package com.maniburguer.hamburgueria.maniburguer.Classes;
 
+import android.util.Log;
 import android.widget.Switch;
 
 import java.util.ArrayList;
@@ -19,15 +20,17 @@ public class MoldeHamburguer {
 
 
     public static void adicionarIngrediente(ArrayList<Ingrediente> x , Ingrediente y){
-        if(x.equals(carne)) {
+        Log.i("EJOR","entrou no adicionarIngrediente com o ingrediente "+ y.getNome());
+        if(x==getCarne()) {
+            Log.i("EJOR","entrou no getCarne() e foi add "+ y.getNome());
             carne.add(y);
-        }else if(x.equals(queijo)){
+        }else if(x==getQueijo()){
             queijo.add(y);
-        }else if(x.equals(salada)){
+        }else if(x==getSalada()){
             salada.add(y);
-        }else if(x.equals(acrescimos)){
+        }else if(x==getAcrescimos()){
             acrescimos.add(y);
-        }else if(x.equals(molhos)){
+        }else if(x==getMolhos()){
             molhos.add(y);
         }
     }
@@ -47,14 +50,6 @@ public class MoldeHamburguer {
         acrescimos.clear();
         molhos.clear();
         preco = 0.0;
-    }
-
-    public static String getNome() {
-        return nome;
-    }
-
-    public static void setNome(String nome) {
-        MoldeHamburguer.nome = nome;
     }
 
     public  static Ingrediente getPao() {

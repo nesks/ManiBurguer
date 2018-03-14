@@ -3,6 +3,7 @@ package com.maniburguer.hamburgueria.maniburguer.Fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,8 +43,10 @@ public class EnviarFragment extends Fragment {
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MoldeHamburguer.setNome(String.valueOf(nomeHamburguer.getText()));
-                Usuario.addHamburguer(new Hamburguer());
+                Hamburguer x = new Hamburguer(String.valueOf(nomeHamburguer.getText()));
+
+                Log.i("carrinho", "x carne size: "+x.getCarne().size());
+                Usuario.addHamburguer(x);
                 TestesIniciais.goCarrinhoScreen(getContext());
             }
         });

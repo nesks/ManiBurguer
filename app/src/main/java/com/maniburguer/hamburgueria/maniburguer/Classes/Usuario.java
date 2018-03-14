@@ -17,7 +17,7 @@ public class Usuario {
     //firebase
     private static DatabaseReference databaseReferencia = FirebaseDatabase.getInstance().getReference();
     private static DatabaseReference pedidoReferencia = databaseReferencia.child("pedidos");
-    private DatabaseReference nomeDoHamburguerReferencia;
+
 
 
     private static String nome;
@@ -90,7 +90,9 @@ public class Usuario {
     }
 
     public static void enviarHamburguers(){
-         for(int i=0; i<carrinho.size();i++){
+        Log.i("carrinho", "enviado");
+
+for(int i=0; i<carrinho.size();i++){
             pedidoReferencia.child(carrinho.get(i).getNome()).setValue(carrinho.get(i));
         }
 
