@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.maniburguer.hamburgueria.maniburguer.Adapter.TabsAdapter;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Estoque;
+import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Usuario;
 import com.maniburguer.hamburgueria.maniburguer.Util.SlidingTabLayout;
 import com.maniburguer.hamburgueria.maniburguer.Util.TestesIniciais;
@@ -33,17 +34,17 @@ public class Main2Activity extends AppCompatActivity
     private TextView tvemail;
     private CircleImageView ivfoto;
 
-    //hamburguer estoque
-    private static Estoque tudoquetemos = new Estoque();
-
     //abas
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
-    private RelativeLayout rlContent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        //Deleta o molde
+        MoldeHamburguer.apagaTudo();
 
         //verifica se está aberto ou não
         TestesIniciais.verificaStatus(this);

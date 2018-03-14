@@ -43,7 +43,7 @@ public class EnviarFragment extends Fragment {
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Hamburguer x = new Hamburguer(String.valueOf(nomeHamburguer.getText()));
+                Hamburguer x = new Hamburguer(String.valueOf(nomeHamburguer.getText()), Usuario.getNome());
 
                 Log.i("carrinho", "x carne size: "+x.getCarne().size());
                 Usuario.addHamburguer(x);

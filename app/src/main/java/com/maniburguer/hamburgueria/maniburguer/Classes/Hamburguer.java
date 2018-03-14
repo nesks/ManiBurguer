@@ -16,8 +16,8 @@ public class Hamburguer {
 
 
 
-    public Hamburguer(String nome){
-             dados = new DadosDoHamburguer(nome , MoldeHamburguer.getPreco());
+    public Hamburguer(String nome, String nomeDoUsuario){
+             dados = new DadosDoHamburguer(nome , MoldeHamburguer.getPreco(), nomeDoUsuario);
             pao = MoldeHamburguer.getPao();
             this.carne.addAll(MoldeHamburguer.getCarne());
             queijo.addAll(MoldeHamburguer.getQueijo());

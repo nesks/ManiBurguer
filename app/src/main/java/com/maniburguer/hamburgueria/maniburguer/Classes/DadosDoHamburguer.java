@@ -12,9 +12,23 @@ public class DadosDoHamburguer {
 
     public DadosDoHamburguer(){}
 
-    public DadosDoHamburguer(String nomeDoHamburguer, Double precoDoHamburguer) {
+    public DadosDoHamburguer(String nomeDoHamburguer, Double precoDoHamburguer, String nomeDoUsuario) {
         this.nomeDoHamburguer = nomeDoHamburguer;
         this.precoDoHamburguer = precoDoHamburguer;
+        this.endereco = new Endereco();
+        this.nomeDoUsuario = nomeDoUsuario;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getNomeDoUsuario() {
+        return nomeDoUsuario;
     }
 
     public String getNomeDoHamburguer() {
