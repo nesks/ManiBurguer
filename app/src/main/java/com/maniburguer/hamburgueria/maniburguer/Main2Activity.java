@@ -1,5 +1,6 @@
 package com.maniburguer.hamburgueria.maniburguer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -29,6 +30,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    //hamburguer estoque NAO DELETAR, DA ERRO
+    private static Estoque tudoquetemos = new Estoque();
 
     private TextView tvnome;
     private TextView tvemail;
@@ -52,14 +55,12 @@ public class Main2Activity extends AppCompatActivity
         //verifica se está logado
         TestesIniciais.verificaAuth(this);
 
-
+        //toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 

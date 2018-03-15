@@ -9,6 +9,7 @@ public class Endereco {
     private String bairro;
     private String rua;
     private String numero;
+    private String referencia;
 
     public Endereco() {
     }
@@ -43,5 +44,13 @@ public class Endereco {
 
     public void setNumero(String numero) {
         this.numero = numero;
+    }
+
+    public String getReferencia() {
+        return referencia;
+    }
+
+    public void setReferencia(String referencia) {
+        this.referencia = referencia;
     }
 }

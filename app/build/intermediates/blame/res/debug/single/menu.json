@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\menu\\voltar.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\menu\\voltar.xml"
+    },
+    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\menu\\carrinho.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\menu\\carrinho.xml"
     },

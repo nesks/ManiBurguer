@@ -18,18 +18,9 @@ public class Usuario {
     private static Uri photoURL;
     private static String id;
     private static Endereco endereco;
-    private static ArrayList<Hamburguer> carrinho = new ArrayList<Hamburguer>();
-    private static Double precoGeral;
+    private static Pedido pedido;
 
-    public Usuario(){
-
-    }
-
-    public void atualizarPrecoGeral(){
-        int i;
-        for(i=0;i<carrinho.size();i++){
-            precoGeral += carrinho.get(i).getDados().getPrecoDoHamburguer();
-        }
+    public Usuario() {
 
     }
 
@@ -38,6 +29,14 @@ public class Usuario {
         this.email = email;
         this.photoURL = photoURL;
         this.id = id;
+    }
+
+    public static Pedido getPedido() {
+        return pedido;
+    }
+
+    public static void setPedido(Pedido pedido) {
+        Usuario.pedido = pedido;
     }
 
     public static String getNome() {
@@ -60,22 +59,12 @@ public class Usuario {
         this.id = id;
     }
 
-    public static ArrayList<Hamburguer> getCarrinho() {
-        return carrinho;
-    }
 
-    public static Double getPrecoGeral() {
-        return precoGeral;
-    }
 
     public static Endereco getEndereco() {
         return endereco;
     }
 
-    public static void addHamburguer(Hamburguer hamb){
-        carrinho.add(hamb);
-        Log.d("FRAGMENT", "adicionarHamburguer: "+carrinho.size());
-    }
 
 
 

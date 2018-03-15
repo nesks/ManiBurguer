@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import com.maniburguer.hamburgueria.maniburguer.Classes.Hamburguer;
 import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
+import com.maniburguer.hamburgueria.maniburguer.Classes.Pedido;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Usuario;
 import com.maniburguer.hamburgueria.maniburguer.R;
 import com.maniburguer.hamburgueria.maniburguer.Util.TestesIniciais;
@@ -46,7 +47,10 @@ public class EnviarFragment extends Fragment {
                 Hamburguer x = new Hamburguer(String.valueOf(nomeHamburguer.getText()), Usuario.getNome());
 
                 Log.i("carrinho", "x carne size: "+x.getCarne().size());
-                Usuario.addHamburguer(x);
+                Pedido y = new Pedido();
+                Usuario.setPedido(y);
+                Usuario.getPedido().addHamburguer(x);
+                Usuario.getPedido().atualizarPrecoGeral();
                 TestesIniciais.goCarrinhoScreen(getContext());
             }
         });

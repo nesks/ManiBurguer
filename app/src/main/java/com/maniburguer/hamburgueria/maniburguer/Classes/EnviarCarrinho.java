@@ -19,10 +19,9 @@ public class EnviarCarrinho {
 
     public static void enviarHamburguers(){
         Log.i("carrinho", "enviado");
-        for(int i=0; i<Usuario.getCarrinho().size();i++){
-            nomeUsuarioReferencia.child(Usuario.getCarrinho().get(i).getDados().getNomeDoHamburguer()).setValue(Usuario.getCarrinho().get(i));
+        for(int i=0; i<Usuario.getPedido().getHamburguers().size();i++){
+            nomeUsuarioReferencia.child(Usuario.getPedido().getHamburguers().get(i).getDados().getNomeDoHamburguer()).setValue(Usuario.getPedido().getHamburguers().get(i));
         }
-
     }
 
 }

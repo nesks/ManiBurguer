@@ -16,6 +16,10 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_voltar.png",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_voltar.png"
+    },
+    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },

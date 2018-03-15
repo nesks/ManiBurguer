@@ -31,6 +31,7 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
 
 import java.util.Arrays;
 
@@ -127,6 +128,8 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
                 }
             }
         };
+
+
 
     }
 
