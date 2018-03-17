@@ -12,44 +12,16 @@
     tools:context="com.maniburguer.hamburgueria.maniburguer.CarrinhoActivity"
     tools:showIn="@layout/app_bar_carrinho"
     android:background="@color/mainBg"
-    android:orientation="vertical"
+    android:orientation="vertical">
 
-    >
-    <RelativeLayout
+    <FrameLayout
+        android:id="@+id/fragment_exemplo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.1">
+        android:tag="TAG"
+        />
 
 
 
-    </RelativeLayout>
-
-
-
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="0.9">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="enviar"
-            android:id="@+id/btEnviarContent"
-            android:background="@drawable/botao_google"
-            android:layout_gravity="right"
-            android:layout_alignParentRight="true"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="limpar"
-            android:id="@+id/btLimpar"
-            android:background="@drawable/botao_google"
-            android:layout_gravity="left"
-            />
-
-    </RelativeLayout>
 
 </LinearLayout>

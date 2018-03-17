@@ -10,6 +10,7 @@ public class Endereco {
     private String rua;
     private String numero;
     private String referencia;
+    private String complemento;
 
     public Endereco() {
     }
@@ -52,5 +53,13 @@ public class Endereco {
 
     public void setReferencia(String referencia) {
         this.referencia = referencia;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 }

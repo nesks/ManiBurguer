@@ -28,12 +28,12 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\fragment_molhos.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main2.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\content_main2.xml"
-    },
-    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main2.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\content_main2.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fechados.xml",
@@ -104,6 +104,10 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-messenger\\4.27.0\\res\\layout\\messenger_button_send_white_large.xml"
     },
     {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_carrinho_fragment_pedido.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\fragment_carrinho_fragment_pedido.xml"
+    },
+    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_item_separator.xml"
     },
@@ -136,12 +140,12 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-common\\4.27.0\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-common\\4.27.0\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pao.xml",
@@ -220,6 +224,10 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_endereco_fragment_pedido.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\fragment_endereco_fragment_pedido.xml"
+    },
+    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_icon_group.xml"
     },
@@ -296,12 +304,16 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_carrinho.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\content_carrinho.xml"
+    },
+    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_lines_media.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_carrinho.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\content_carrinho.xml"
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pagamento_fragment_pedido.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\fragment_pagamento_fragment_pedido.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",

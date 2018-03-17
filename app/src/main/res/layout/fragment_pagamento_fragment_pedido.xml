@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maniburguer.hamburgueria.maniburguer.Fragment.PagamentoFragmentPedido"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="PAGAMENTO"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Forma de pagamento:"
+            android:id="@+id/tVBairro"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIMPAR CARRINHO"
+            android:id="@+id/btLimparPedido"
+            android:background="@drawable/botao_google"
+            android:textColor="@color/amarelo"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR PEDIDO"
+            android:id="@+id/btConfirmarPedido"
+            android:layout_below="@+id/btLimparPedido"
+            android:background="@drawable/botao_facebook"
+            android:backgroundTint="@color/amarelo"
+            android:textColor="@color/amarelo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="voltar"
+        android:id="@+id/traz"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/botao_google"
+        android:textColor="@color/amarelo"
+        />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
