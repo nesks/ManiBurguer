@@ -3332,7 +3332,6 @@ containing a value of this type.
         public static final int textView=0x7f0d008b;
         public static final int textView2=0x7f0d00bb;
         public static final int textView3=0x7f0d00ad;
-        public static final int textView4=0x7f0d00ab;
         public static final int text_input_password_toggle=0x7f0d00a8;
         public static final int text_item_tab=0x7f0d00db;
         public static final int textinput_counter=0x7f0d000a;
@@ -3348,6 +3347,7 @@ containing a value of this type.
         public static final int transition_current_scene=0x7f0d000c;
         public static final int transition_scene_layoutid_cache=0x7f0d000d;
         public static final int traz=0x7f0d00b8;
+        public static final int tvCarrinho=0x7f0d00ab;
         public static final int unknown=0x7f0d004b;
         public static final int up=0x7f0d000e;
         public static final int useLogo=0x7f0d0019;

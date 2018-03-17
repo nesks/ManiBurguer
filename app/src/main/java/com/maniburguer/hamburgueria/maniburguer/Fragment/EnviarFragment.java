@@ -45,10 +45,6 @@ public class EnviarFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Hamburguer x = new Hamburguer(String.valueOf(nomeHamburguer.getText()), Usuario.getNome());
-
-                Log.i("carrinho", "x carne size: "+x.getCarne().size());
-                Pedido y = new Pedido();
-                Usuario.setPedido(y);
                 Usuario.getPedido().addHamburguer(x);
                 Usuario.getPedido().atualizarPrecoGeral();
                 TestesIniciais.goCarrinhoScreen(getContext());

@@ -43,7 +43,7 @@ public class MonteSeuHamburguer {
             //configurar  2 relativelayout (cada bloco de ingrediente)
             final RelativeLayout[] newlayout = new RelativeLayout[2];
             LinearLayout.LayoutParams newlayoutLP = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT,0.5f);
-
+            newlayoutLP.setMargins(5,5,5,5);
 
             for (int j = 0; j < 2; j++) {
 
@@ -67,12 +67,10 @@ public class MonteSeuHamburguer {
                     //CRIA E CONFIGURA O NOME DO INGREDIENTE
                     TextView nome = new TextView(v.getContext());
                     nome.setText(ingredientes.get(i + j).getNome());
-                    nome.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
 
                     //CRIA E CONFIGURA O PREÇO DO INGREDIENTE
                     TextView preco = new TextView(v.getContext());
                     preco.setText(String.valueOf(ingredientes.get(i + j).getPreco()));
-                    preco.setTextAlignment(View.TEXT_ALIGNMENT_GRAVITY);
 
                     //ADICIONA TUDO NO BLOCO
                     newlayout[j].addView(imageview);

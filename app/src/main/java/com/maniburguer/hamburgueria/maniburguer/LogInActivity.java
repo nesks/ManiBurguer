@@ -32,6 +32,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
+import com.maniburguer.hamburgueria.maniburguer.Classes.Pedido;
+import com.maniburguer.hamburgueria.maniburguer.Classes.Usuario;
 
 import java.util.Arrays;
 
@@ -186,6 +188,8 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void updateUI() {
         Toast.makeText(this, "Logado com sucesso", Toast.LENGTH_SHORT).show();
+        Pedido y = new Pedido();
+        Usuario.setPedido(y);
         goMainScreen();
         finish();
     }
