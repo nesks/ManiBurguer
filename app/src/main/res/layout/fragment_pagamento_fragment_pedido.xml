@@ -40,32 +40,11 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.75"
-        android:layout_gravity="center"
-        >
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LIMPAR CARRINHO"
-            android:id="@+id/btLimparPedido"
-            android:background="@drawable/botao_google"
-            android:textColor="@color/amarelo"
-            />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CONFIRMAR PEDIDO"
-            android:id="@+id/btConfirmarPedido"
-            android:layout_below="@+id/btLimparPedido"
-            android:background="@drawable/botao_facebook"
-            android:backgroundTint="@color/amarelo"
-            android:textColor="@color/amarelo" />
-    </RelativeLayout>
+
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -81,6 +60,20 @@
         android:background="@drawable/botao_google"
         android:textColor="@color/amarelo"
         />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR PEDIDO"
+            android:id="@+id/btConfirmarPedido"
+            android:layout_below="@+id/btLimparPedido"
+            android:background="@drawable/botao_facebook"
+            android:backgroundTint="@color/amarelo"
+            android:textColor="@color/amarelo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
 
     </RelativeLayout>
 

@@ -34,6 +34,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Pedido;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Usuario;
+import com.maniburguer.hamburgueria.maniburguer.Util.TestesIniciais;
 
 import java.util.Arrays;
 
@@ -57,6 +58,15 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //verifica se está aberto ou não
+        TestesIniciais.verificaStatus(this);
+
+        //verifica se está logado
+        TestesIniciais.verificaAuth(this);
+
+
+
         setContentView(R.layout.activity_log_in);
 
         // Configure Google Sign In

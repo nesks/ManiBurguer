@@ -19,6 +19,7 @@ import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.maniburguer.hamburgueria.maniburguer.Classes.EnviarCarrinho;
+import com.maniburguer.hamburgueria.maniburguer.Classes.Pedido;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Usuario;
 import com.maniburguer.hamburgueria.maniburguer.R;
 import com.maniburguer.hamburgueria.maniburguer.Util.TestesIniciais;
@@ -30,7 +31,10 @@ public class CarrinhoFragmentPedido extends Fragment {
 
     private ScrollView scroll;
     private Button frente;
-    View v;
+    private TextView precoTotal;
+    private Button limparCarrinho;
+
+    private View v;
 
     public CarrinhoFragmentPedido() {
         // Required empty public constructor
@@ -63,6 +67,7 @@ public class CarrinhoFragmentPedido extends Fragment {
             LinearLayout.LayoutParams linearLayoutlp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             linearLayout.setLayoutParams(linearLayoutlp);
             linearLayout.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayoutlp.setMargins(0,10,0,10);
 
             LinearLayout ll1 = new LinearLayout(v.getContext());
             LinearLayout.LayoutParams ll1P = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT,0.2f);
@@ -137,6 +142,16 @@ public class CarrinhoFragmentPedido extends Fragment {
                 ll2.addView(preco);
             }
 
+            //nome do ingrediente
+            TextView precoGeral = new TextView(v.getContext());
+            precoGeral.setText("preço do hamburguer:");
+            ll1.addView(precoGeral);
+            //preco do ingrediente
+            TextView preco2 = new TextView(v.getContext());
+            preco2.setText(String.valueOf(Usuario.getPedido().getHamburguers().get(i).getDados().getPrecoDoHamburguer()));
+            ll2.addView(preco2);
+
+
             linearLayout.addView(ll1);
             linearLayout.addView(ll2);
         tableLayout.addView(linearLayout);
@@ -149,11 +164,20 @@ public class CarrinhoFragmentPedido extends Fragment {
         ll.addView(tableLayout);
 
 
+        precoTotal = (TextView) v.findViewById(R.id.precoTotal);
+        precoTotal.setText(Usuario.getPedido().getPrecoGeral().toString());
 
+        limparCarrinho = (Button) v.findViewById(R.id.btLimparPedido);
+        limparCarrinho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Pedido x = new Pedido();
+                Usuario.setPedido(x);
+                TestesIniciais.goMainScreen(getContext());
+            }
+        });
 
-
-
-frente = (Button) v.findViewById(R.id.frente);
+        frente = (Button) v.findViewById(R.id.frente);
         frente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

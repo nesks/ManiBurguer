@@ -4,34 +4,59 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="10964322574841"
+    timestamp="14399478891835"
     token="-4983580043256951036" >
 
     <task
         name="javac"
-        duration="2680" />
+        duration="9119" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="255" />
+        duration="277" />
     <task
         name="verifier"
-        duration="25" />
+        duration="26" />
 
     <artifact
-        location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+        location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
         type="DEX" />
 
-    <build timestamp="10574867401353" >
+    <build timestamp="12631971143391" >
         <artifact
             location="C:\Users\indigente\Desktop\ManiBurguer\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="10964322574841" >
+    <build
+        timestamp="13852538869606"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
         <artifact
             location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="14399478891835" >
+        <artifact
+            location="C:\Users\indigente\Desktop\ManiBurguer\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
             type="DEX" />
     </build>
 

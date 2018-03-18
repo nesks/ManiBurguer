@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.1">
+        android:layout_weight="0.2">
 
 
         <TextView
@@ -46,13 +46,45 @@
     </RelativeLayout>
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preço total: "
+            android:id="@+id/tVPrecoTotal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/precoTotal"
+            android:text="teste"
+            android:layout_toRightOf="@+id/tVPrecoTotal"
+
+
+            />
+        </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.9">
 
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIMPAR CARRINHO"
+            android:id="@+id/btLimparPedido"
+            android:background="@drawable/botao_facebook"
+            android:backgroundTint="@color/amarelo"
+            android:textColor="@color/amarelo"
+            android:layout_alignParentBottom="true"
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,6 +93,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/botao_google"
             android:textColor="@color/amarelo"
+            android:layout_alignParentBottom="true"
             />
     </RelativeLayout>
 

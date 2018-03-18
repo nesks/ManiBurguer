@@ -76,10 +76,7 @@ public class TestesIniciais {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if(user!=null){
             setUserData(user);
-        }else{
-            goLogInScreen(c);
         }
-
     }
 
 

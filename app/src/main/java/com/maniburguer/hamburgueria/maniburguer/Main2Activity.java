@@ -51,11 +51,6 @@ public class Main2Activity extends AppCompatActivity
         //Deleta o molde
         MoldeHamburguer.apagaTudo();
 
-        //verifica se está aberto ou não
-        TestesIniciais.verificaStatus(this);
-
-        //verifica se está logado
-        TestesIniciais.verificaAuth(this);
 
         //toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
