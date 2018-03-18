@@ -1,5 +1,7 @@
 package com.maniburguer.hamburgueria.maniburguer;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -118,7 +120,11 @@ public class Main2Activity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.carrinho) {
-            TestesIniciais.goCarrinhoScreen(this);
+            if(Usuario.getPedido()!=null&&(!Usuario.getPedido().getHamburguers().isEmpty())) {
+                TestesIniciais.goCarrinhoScreen(this);
+            }else{
+                alerta();
+            }
             return true;
         }
 
@@ -144,5 +150,13 @@ public class Main2Activity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    public void alerta(){
+        new AlertDialog.Builder(this).setTitle("Carrinho")
+                .setMessage("Carrinho vazio, não pode continuar.")
+                .show();
+
     }
 }

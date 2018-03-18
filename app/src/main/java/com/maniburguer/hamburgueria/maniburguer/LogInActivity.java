@@ -188,8 +188,6 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void updateUI() {
         Toast.makeText(this, "Logado com sucesso", Toast.LENGTH_SHORT).show();
-        Pedido y = new Pedido();
-        Usuario.setPedido(y);
         goMainScreen();
         finish();
     }

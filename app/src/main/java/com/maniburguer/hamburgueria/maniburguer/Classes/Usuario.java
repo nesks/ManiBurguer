@@ -29,6 +29,7 @@ public class Usuario {
         this.email = email;
         this.photoURL = photoURL;
         this.id = id;
+       pedido = new Pedido();
     }
 
     public static Pedido getPedido() {

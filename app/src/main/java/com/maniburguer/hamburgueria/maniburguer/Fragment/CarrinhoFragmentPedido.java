@@ -158,15 +158,12 @@ frente = (Button) v.findViewById(R.id.frente);
             @Override
             public void onClick(View v) {
 
-                if(Usuario.getPedido()!=null&&(!Usuario.getPedido().getHamburguers().isEmpty())) {
                     EnderecoFragmentPedido fr = new EnderecoFragmentPedido();
                     FragmentManager fm = getFragmentManager();
                     FragmentTransaction fragmentTransaction = fm.beginTransaction();
                     fragmentTransaction.replace(R.id.fragment_exemplo, fr);
                     fragmentTransaction.commit();
-                }else{
-                    alerta();
-                }
+
             }
         });
 
@@ -174,18 +171,7 @@ frente = (Button) v.findViewById(R.id.frente);
 return v;
     }
 
-    public void alerta(){
-        new AlertDialog.Builder(getContext()).setTitle("Carrinho")
-                .setMessage("Carrinho vazio, não pode continuar.")
-                .setPositiveButton("Pagina inicial", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        TestesIniciais.goMainScreen(getContext());
-                    }
-                })
-                .show();
 
-    }
 
 
 }
