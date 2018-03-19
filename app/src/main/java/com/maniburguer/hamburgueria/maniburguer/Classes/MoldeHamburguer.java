@@ -45,6 +45,7 @@ public class MoldeHamburguer {
         salada.clear();
         acrescimos.clear();
         molhos.clear();
+        queijo.clear();
         preco = 0.0;
     }
 

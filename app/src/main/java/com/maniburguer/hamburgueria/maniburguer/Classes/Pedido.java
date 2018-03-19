@@ -31,12 +31,19 @@ public class Pedido {
         return hamburguers;
     }
 
+    public void removeHamburguer(int i){
+        hamburguers.remove(i);
+        atualizarPrecoGeral();
+    }
+
+
     public ArrayList<Acompanhamento> getAcompanhamentos() {
         return acompanhamentos;
     }
 
     public void atualizarPrecoGeral() {
         int i;
+        precoGeral = 0.0;
         for (i = 0; i < hamburguers.size(); i++) {
             precoGeral += hamburguers.get(i).getDados().getPrecoDoHamburguer();
         }

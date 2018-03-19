@@ -44,6 +44,7 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
     //google
     private GoogleApiClient googleApiClient;
     private ProgressBar progressBar;
+
     //facebook
     private CallbackManager mCallbackManager;
     private static final String TAG = "FACELOG";
@@ -105,6 +106,7 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
                     public void onCancel() {
                         Log.d(TAG, "facebook:onCancel");
                         Toast.makeText(LogInActivity.this,"Cancelado", Toast.LENGTH_SHORT).show();
+                        desligaProcess();
                     }
 
                     @Override
@@ -198,7 +200,7 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void updateUI() {
         Toast.makeText(this, "Logado com sucesso", Toast.LENGTH_SHORT).show();
-        goMainScreen();
+        TestesIniciais.goMainScreen(this);
         finish();
     }
 
@@ -233,11 +235,6 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
         });
     }
 
-    private void goMainScreen() {
-        Intent intent = new Intent(this, Main2Activity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }
 
     @Override
     protected void onStop() {
