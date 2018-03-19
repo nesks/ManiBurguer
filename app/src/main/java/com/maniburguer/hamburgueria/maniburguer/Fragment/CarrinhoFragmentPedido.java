@@ -65,8 +65,10 @@ public class CarrinhoFragmentPedido extends Fragment {
 
 
             //LAYOUT PARA DIVIDIR NOME:PRECO
-            RelativeLayout relativeLayout = new RelativeLayout(v.getContext());
-            RelativeLayout.LayoutParams linearLayoutlp = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            LinearLayout relativeLayout = new LinearLayout(v.getContext());
+            LinearLayout.LayoutParams linearLayoutlp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+            relativeLayout.setOrientation(LinearLayout.HORIZONTAL);
+            linearLayoutlp.setMargins(5,5,5,5);
             relativeLayout.setLayoutParams(linearLayoutlp);
             relativeLayout.setBackgroundResource(R.color.mainBloco);
 
