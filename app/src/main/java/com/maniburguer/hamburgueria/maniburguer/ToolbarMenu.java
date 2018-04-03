@@ -4,6 +4,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -26,14 +27,9 @@ public class ToolbarMenu extends AppCompatActivity
     private TextView tvemail;
     private CircleImageView ivfoto;
 
-    private int menuRes;
 
-    public void setMenuRes(int menuRes) {
-        this.menuRes = menuRes;
-    }
 
     public void iniciar(){
-        setContentView(R.layout.activity_main2);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -65,7 +61,7 @@ public class ToolbarMenu extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(menuRes, menu);
+        getMenuInflater().inflate(R.menu.carrinho, menu);
         //coloca a imagem
 
         tvnome = (TextView) findViewById(R.id.TVnome);
@@ -87,8 +83,12 @@ public class ToolbarMenu extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == menuRes) {
+        if (id == R.id.carrinho) {
+            if(Usuario.getPedido()!=null&&!Usuario.getPedido().getHamburguers().isEmpty()) {
                 TestesIniciais.goCarrinhoScreen(this);
+            }else{
+                alerta();
+            }
             return true;
         }
 
@@ -101,12 +101,10 @@ public class ToolbarMenu extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_configuracao) {
-            // Handle the camera action
-        } else if (id == R.id.nav_compartilhar) {
+        if (id == R.id.nav_historico) {
 
-        } else if (id == R.id.nav_enviar) {
-
+        } else if (id == R.id.nav_pagina_inicial) {
+            TestesIniciais.goMainScreen(this);
         } else if (id == R.id.nav_sair) {
             TestesIniciais.sair(this);
         }
@@ -114,5 +112,8 @@ public class ToolbarMenu extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void alerta() {
+        new AlertDialog.Builder(this).setTitle("Carrinho").setMessage("Carrinho vazio").show();
     }
 }

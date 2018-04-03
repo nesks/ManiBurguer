@@ -54,12 +54,7 @@ public class MonteSeuHamburguer {
                     newlayout[j].setOrientation(LinearLayout.VERTICAL);
                     newlayout[j].setLayoutParams(newlayoutLP);
 
-                    //VERIFICA SE ALGO JA FOI SELECIONADO
-                    if (moldeHamburguer.contains(ingredientes.get(i + j))) {
-                        newlayout[j].setBackgroundResource(R.color.amarelo);
-                    } else {
-                        newlayout[j].setBackgroundResource(R.color.mainBloco);
-                    }
+
 
                     //cria e configura cada imagem dos ingredientes q fica no bloco
                     final ImageView imageview = new ImageView(v.getContext());
@@ -78,6 +73,16 @@ public class MonteSeuHamburguer {
                     nome.setText(ingredientes.get(i + j).getNome());
                     nome.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 
+                    //VERIFICA SE ALGO JA FOI SELECIONADO
+                    if (moldeHamburguer.contains(ingredientes.get(i + j))) {
+                        newlayout[j].setBackgroundResource(R.color.amarelo);
+                        preco.setTextColor(v.getContext().getColor(R.color.branco));
+
+                    } else {
+                        newlayout[j].setBackgroundResource(R.color.mainBloco);
+                        preco.setTextColor(v.getContext().getColor(R.color.amarelo));
+
+                    }
 
                     //ADICIONA TUDO NO BLOCO
                     newlayout[j].addView(imageview);
