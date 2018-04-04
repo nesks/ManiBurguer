@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Hamburguer {
 
-        private  Ingrediente pao;
+        private  ArrayList<Ingrediente> pao = new ArrayList<>();
         private  ArrayList<Ingrediente> carne = new ArrayList<Ingrediente>();
         private  ArrayList<Ingrediente> queijo = new ArrayList<Ingrediente>();
         private  ArrayList<Ingrediente> salada= new ArrayList<Ingrediente>();
@@ -17,9 +17,9 @@ public class Hamburguer {
 
 
     public Hamburguer(String nome, String nomeDoUsuario){
-             dados = new DadosDoHamburguer(nome , MoldeHamburguer.getPreco(), nomeDoUsuario);
-            pao = MoldeHamburguer.getPao();
-            this.carne.addAll(MoldeHamburguer.getCarne());
+            dados = new DadosDoHamburguer(nome , MoldeHamburguer.getPreco(), nomeDoUsuario);
+            pao.addAll(MoldeHamburguer.getPao());
+            carne.addAll(MoldeHamburguer.getCarne());
             queijo.addAll(MoldeHamburguer.getQueijo());
             salada.addAll(MoldeHamburguer.getSalada());
             acrescimos.addAll(MoldeHamburguer.getAcrescimos());
@@ -27,11 +27,11 @@ public class Hamburguer {
             MoldeHamburguer.apagaTudo();
         }
 
-        public   Ingrediente getPao() {
-            return pao;
-        }
+    public ArrayList<Ingrediente> getPao() {
+        return pao;
+    }
 
-        public   ArrayList<Ingrediente> getCarne() {
+    public   ArrayList<Ingrediente> getCarne() {
             return carne;
         }
 

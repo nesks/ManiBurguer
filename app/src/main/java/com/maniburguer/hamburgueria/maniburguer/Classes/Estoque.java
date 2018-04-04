@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by ind on 28/12/2017.
  */
 public class Estoque {
-    private static Ingrediente pao;
+    private static ArrayList<Ingrediente>  pao= new ArrayList<Ingrediente>();
     private static ArrayList<Ingrediente> carne = new ArrayList<Ingrediente>();
     private static ArrayList<Ingrediente> salada = new ArrayList<Ingrediente>();
     private static ArrayList<Ingrediente> queijo = new ArrayList<Ingrediente>();
@@ -16,7 +16,8 @@ public class Estoque {
 
     public Estoque(){
         //pao
-        pao = new Ingrediente("Pão comum",0.3);
+        pao.add(new Ingrediente("Pão com gergelim", 0.3));
+        pao.add(new Ingrediente("Pão comum", 0.3));
         //carne
         carne.add(new Ingrediente("Carne bovina artesanal 100g",3.0));
         carne.add(new Ingrediente("Carne bovina artesanal 150g",4.0));
@@ -60,7 +61,7 @@ public class Estoque {
         molhos.add(new Ingrediente("Maionese de bacon",0.0));
     }
 
-    public static Ingrediente getPao() {
+    public static ArrayList<Ingrediente> getPao() {
         return pao;
     }
 

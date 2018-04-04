@@ -37,9 +37,6 @@ public class Main2Activity extends ToolbarMenu {
     //hamburguer estoque NAO DELETAR, DA ERRO
     private static Estoque tudoquetemos = new Estoque();
 
-    private TextView tvnome;
-    private TextView tvemail;
-    private CircleImageView ivfoto;
 
     //abas
     private SlidingTabLayout slidingTabLayout;
@@ -59,6 +56,7 @@ public class Main2Activity extends ToolbarMenu {
 
         View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.content_main2, null);
         LinearLayout foo = (LinearLayout)findViewById(R.id.layoutt);
+        TestesIniciais.inicializaPreco(view);
         foo.addView(view);
 
         //configurar abas

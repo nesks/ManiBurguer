@@ -304,12 +304,12 @@
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_carrinho.xml",
         "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\src\\main\\res\\layout\\content_carrinho.xml"
+    },
+    {
+        "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\indigente\\Desktop\\ManiBurguer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pagamento_fragment_pedido.xml",

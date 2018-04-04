@@ -120,16 +120,18 @@ public class CarrinhoFragmentPedido extends Fragment {
 
 
 
-            //nome do ingrediente
-                TextView getPao = new TextView(v.getContext());
-            getPao.setText(Usuario.getPedido().getHamburguers().get(i).getPao().getNome());
-                ll1.addView(getPao);
-                //preco do ingrediente
-                TextView preco1 = new TextView(v.getContext());
-                preco1.setText(String.valueOf(Usuario.getPedido().getHamburguers().get(i).getPao().getPreco()));
-                  preco1.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
-                ll2.addView(preco1);
 
+            for(int j=0;j<Usuario.getPedido().getHamburguers().get(i).getPao().size();j++){
+                //nome do ingrediente
+                TextView pao = new TextView(v.getContext());
+                pao.setText(Usuario.getPedido().getHamburguers().get(i).getPao().get(j).getNome());
+                ll1.addView(pao);
+                //preco do ingrediente
+                TextView preco = new TextView(v.getContext());
+                preco.setText(String.valueOf(Usuario.getPedido().getHamburguers().get(i).getPao().get(j).getPreco()));
+                ll2.addView(preco);
+                preco.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
+            }
 
 
             for(int j=0;j<Usuario.getPedido().getHamburguers().get(i).getCarne().size();j++){

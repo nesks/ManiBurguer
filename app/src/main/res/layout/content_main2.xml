@@ -23,10 +23,22 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/vpmain"
+        android:layout_marginBottom="20dp"
         />
 
 
- <com.maniburguer.hamburgueria.maniburguer.Util.SlidingTabLayout
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:text="PREÇO R$ 0,00"
+        android:textColor="@color/amarelo"
+        android:id="@+id/precoTotal"
+        />
+
+
+    <com.maniburguer.hamburgueria.maniburguer.Util.SlidingTabLayout
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:gravity="center_horizontal|bottom"

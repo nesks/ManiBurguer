@@ -16,6 +16,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.maniburguer.hamburgueria.maniburguer.R;
+import com.maniburguer.hamburgueria.maniburguer.Util.TestesIniciais;
 
 import java.util.ArrayList;
 
@@ -30,9 +31,7 @@ public class MonteSeuHamburguer {
     public static void distribuiIngrediente(final ArrayList<Ingrediente> ingredientes, final ArrayList<Ingrediente> moldeHamburguer, View v){
 
         TableLayout tableLayout = new TableLayout(v.getContext());
-        final TextView precoAtualizado;
-        precoAtualizado = (TextView) v.findViewById(R.id.preco);
-        atualizaPreco(precoAtualizado);
+          TestesIniciais.atualizaPreco();
 
         for(int i=0;i<ingredientes.size();i++) {
 
@@ -107,7 +106,7 @@ public class MonteSeuHamburguer {
                                 MoldeHamburguer.adicionarIngrediente(moldeHamburguer, ingredientes.get(finalI + finalJ));
                                 MoldeHamburguer.adicionaPreco(ingredientes.get(finalI + finalJ).getPreco());
                             }
-                            atualizaPreco(precoAtualizado);
+                            TestesIniciais.atualizaPreco();
 
                         }
                     });
@@ -125,9 +124,6 @@ public class MonteSeuHamburguer {
         ll.addView(tableLayout);
     }
 
-    public static void atualizaPreco(TextView preco){
-        preco.setText("PREÇO: "+ String.valueOf(MoldeHamburguer.getPreco()));
 
-    }
 
 }

@@ -7,6 +7,7 @@ public class Ingrediente {
 
     private String nome;
     private Double preco;
+    private String image;
 
     public String getNome() {
         return nome;
@@ -19,6 +20,7 @@ public class Ingrediente {
     public Ingrediente(String nome, Double preco) {
         this.nome = nome;
         this.preco = preco;
+       // this.image = image;
     }
 
 

@@ -6,7 +6,9 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -16,10 +18,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.maniburguer.hamburgueria.maniburguer.CarrinhoActivity;
+import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Usuario;
 import com.maniburguer.hamburgueria.maniburguer.FechadosActivity;
 import com.maniburguer.hamburgueria.maniburguer.LogInActivity;
 import com.maniburguer.hamburgueria.maniburguer.Main2Activity;
+import com.maniburguer.hamburgueria.maniburguer.R;
 
 /**
  * Created by ind on 08/01/2018.
@@ -28,6 +32,9 @@ public class TestesIniciais {
 
 
     private static String status = "online";
+    private static TextView preco;
+
+
 
     //Firebase
     private static DatabaseReference databaseReferencia = FirebaseDatabase.getInstance().getReference();
@@ -120,6 +127,17 @@ public class TestesIniciais {
         Intent intent = new Intent(c, Main2Activity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         c.startActivity(intent);
+    }
+
+    public static void inicializaPreco(View v){
+        preco = (TextView)v.findViewById(R.id.precoTotal);
+    }
+
+
+
+    public static void atualizaPreco(){
+        preco.setText("PREÇO: " + String.valueOf(MoldeHamburguer.getPreco()));
+
     }
 
 }

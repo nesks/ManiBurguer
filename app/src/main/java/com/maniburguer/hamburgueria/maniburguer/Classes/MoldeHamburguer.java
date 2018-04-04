@@ -8,17 +8,19 @@ import java.util.ArrayList;
 
 public class MoldeHamburguer {
 
-    private static Ingrediente pao;
+    private static  ArrayList<Ingrediente> pao = new ArrayList<>();
     private static ArrayList<Ingrediente> carne = new ArrayList<>();
     private static  ArrayList<Ingrediente> queijo = new ArrayList<>();
     private static ArrayList<Ingrediente> salada= new ArrayList<>();
     private static ArrayList<Ingrediente> acrescimos= new ArrayList<>();
     private static ArrayList<Ingrediente> molhos= new ArrayList<>();
-    private static Double preco;
+    private static Double preco = 0.0;
 
 
     public static void adicionarIngrediente(ArrayList<Ingrediente> x , Ingrediente y){
-        if(x==getCarne()) {
+        if(x==getPao()) {
+            pao.add(y);
+        }else if(x==getCarne()) {
             carne.add(y);
         }else if(x==getQueijo()){
             queijo.add(y);
@@ -40,7 +42,7 @@ public class MoldeHamburguer {
     }
 
     public  static void apagaTudo(){
-        pao = null;
+        pao.clear();
         carne.clear();
         salada.clear();
         acrescimos.clear();
@@ -49,12 +51,8 @@ public class MoldeHamburguer {
         preco = 0.0;
     }
 
-    public  static Ingrediente getPao() {
+    public static ArrayList<Ingrediente> getPao() {
         return pao;
-    }
-
-    public  static void setPao(Ingrediente po) {
-        pao = po;
     }
 
     public static  ArrayList<Ingrediente> getCarne() {
@@ -78,6 +76,7 @@ public class MoldeHamburguer {
     }
 
     public  static Double getPreco() {
+
         return preco;
     }
 

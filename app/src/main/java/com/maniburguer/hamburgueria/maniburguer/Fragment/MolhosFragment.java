@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.maniburguer.hamburgueria.maniburguer.Classes.Estoque;
 import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
@@ -34,5 +35,7 @@ public class MolhosFragment extends Fragment {
 
         return v;
     }
+
+
 
 }
