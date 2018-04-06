@@ -21,6 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.maniburguer.hamburgueria.maniburguer.Classes.EnviarCarrinho;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Pedido;
@@ -36,7 +37,8 @@ public class CarrinhoFragmentPedido extends Fragment {
     private ScrollView scroll;
     private Button frente;
     private TextView precoTotal;
-    private Button limparCarrinho;
+    private TextView limparCarrinho;
+    private Button adicionarItem;
 
     private View v;
 
@@ -55,7 +57,7 @@ public class CarrinhoFragmentPedido extends Fragment {
 
 
         precoTotal = (TextView) v.findViewById(R.id.precoTotal);
-        precoTotal.setText(Usuario.getPedido().getPrecoGeral().toString());
+        precoTotal.setText(String.valueOf(Usuario.getPedido().getPrecoGeral()));
 
         scroll = (ScrollView) v.findViewById(R.id.scroll);
         TableLayout tableLayout = new TableLayout(v.getContext());
@@ -218,7 +220,7 @@ public class CarrinhoFragmentPedido extends Fragment {
 
 
 
-        limparCarrinho = (Button) v.findViewById(R.id.btLimparPedido);
+        limparCarrinho = (TextView) v.findViewById(R.id.btLimparPedido);
         limparCarrinho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -228,17 +230,28 @@ public class CarrinhoFragmentPedido extends Fragment {
             }
         });
 
+
+        adicionarItem = (Button) v.findViewById(R.id.btAdicionarItem);
+        adicionarItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TestesIniciais.goMainScreen(getContext());
+            }
+        });
+
         frente = (Button) v.findViewById(R.id.frente);
         frente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if(!Usuario.getPedido().getHamburguers().isEmpty()) {
                     EnderecoFragmentPedido fr = new EnderecoFragmentPedido();
                     FragmentManager fm = getFragmentManager();
                     FragmentTransaction fragmentTransaction = fm.beginTransaction();
                     fragmentTransaction.replace(R.id.fragment_exemplo, fr);
                     fragmentTransaction.commit();
-
+                }else{
+                    Toast.makeText(getContext(),"Não tem nada no carrinho!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

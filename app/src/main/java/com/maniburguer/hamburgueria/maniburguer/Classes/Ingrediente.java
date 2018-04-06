@@ -1,5 +1,7 @@
 package com.maniburguer.hamburgueria.maniburguer.Classes;
 
+import com.maniburguer.hamburgueria.maniburguer.R;
+
 /**
  * Created by ind on 28/12/2017.
  */
@@ -7,7 +9,7 @@ public class Ingrediente {
 
     private String nome;
     private Double preco;
-    private String image;
+    private int image;
 
     public String getNome() {
         return nome;
@@ -17,10 +19,14 @@ public class Ingrediente {
         return preco;
     }
 
-    public Ingrediente(String nome, Double preco) {
+    public int getImage() {
+        return image;
+    }
+
+    public Ingrediente(String nome, Double preco, int image) {
         this.nome = nome;
         this.preco = preco;
-       // this.image = image;
+        this.image = image;
     }
 
 

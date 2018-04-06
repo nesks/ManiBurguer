@@ -11,6 +11,15 @@
         android:layout_height="match_parent"
         android:layout_weight="0.2">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="limpar"
+            android:id="@+id/btLimparPedido"
+            android:textColor="@color/com_facebook_blue"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -79,13 +88,16 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LIMPAR CARRINHO"
-            android:id="@+id/btLimparPedido"
+            android:text="ADICIONAR ITEM"
+            android:id="@+id/btAdicionarItem"
             android:background="@drawable/botao_facebook"
             android:backgroundTint="@color/amarelo"
             android:textColor="@color/amarelo"
             android:layout_alignParentBottom="true"
             />
+
+
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

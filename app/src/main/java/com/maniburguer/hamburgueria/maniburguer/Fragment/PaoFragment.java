@@ -19,6 +19,7 @@ import com.maniburguer.hamburgueria.maniburguer.Classes.Estoque;
 import com.maniburguer.hamburgueria.maniburguer.Classes.Ingrediente;
 import com.maniburguer.hamburgueria.maniburguer.Classes.MoldeHamburguer;
 import com.maniburguer.hamburgueria.maniburguer.Classes.MonteSeuHamburguer;
+
 import com.maniburguer.hamburgueria.maniburguer.R;
 import com.maniburguer.hamburgueria.maniburguer.Util.TestesIniciais;
 
@@ -81,7 +82,8 @@ return v;
 
                     //cria e configura cada imagem dos Estoque.getPao() q fica no bloco
                     final ImageView imageview = new ImageView(v.getContext());
-                    imageview.setImageResource(R.drawable.sandwich);
+                    imageview.setImageResource(Estoque.getPao().get(i+j).getImage());
+
 
 
                     //CRIA E CONFIGURA O PREÇO DO INGREDIENTE
@@ -120,19 +122,7 @@ return v;
                         @TargetApi(Build.VERSION_CODES.M)
                         @Override
                         public void onClick(View v) {
-                          /* if (MoldeHamburguer.getPao().contains(Estoque.getPao().get(finalI + finalJ))) {
-                                newlayout[finalJ].setBackgroundResource(R.color.mainBloco);
-                                preco.setTextColor(v.getContext().getColor(R.color.amarelo));
-                                MoldeHamburguer.removerIngrediente(MoldeHamburguer.getPao(), Estoque.getPao().get(finalI + finalJ));
-                                MoldeHamburguer.removePreco(Estoque.getPao().get(finalI + finalJ).getPreco());
-                            } else {
-                                newlayout[finalJ].setBackgroundResource(R.color.amarelo);
-                                preco.setTextColor(v.getContext().getColor(R.color.branco));
-                                MoldeHamburguer.adicionarIngrediente(MoldeHamburguer.getPao(), Estoque.getPao().get(finalI + finalJ));
-                                MoldeHamburguer.adicionaPreco(Estoque.getPao().get(finalI + finalJ).getPreco());
-                            }
-                            TestesIniciais.atualizaPreco();
-*/
+
                             if(!MoldeHamburguer.getPao().isEmpty()){
                                 if (MoldeHamburguer.getPao().contains(Estoque.getPao().get(finalI + finalJ))) {
                                     newlayout[finalJ].setBackgroundResource(R.color.mainBloco);

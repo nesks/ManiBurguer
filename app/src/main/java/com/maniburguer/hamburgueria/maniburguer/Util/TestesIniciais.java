@@ -136,8 +136,7 @@ public class TestesIniciais {
 
 
     public static void atualizaPreco(){
-        preco.setText("PREÇO: " + String.valueOf(MoldeHamburguer.getPreco()));
-
+        preco.setText("R$ "+String.valueOf(MoldeHamburguer.getPreco())+"0");
     }
 
 }

@@ -57,7 +57,7 @@ public class MonteSeuHamburguer {
 
                     //cria e configura cada imagem dos ingredientes q fica no bloco
                     final ImageView imageview = new ImageView(v.getContext());
-                    imageview.setImageResource(R.drawable.sandwich);
+                    imageview.setImageResource(ingredientes.get(i+j).getImage());
 
 
                     //CRIA E CONFIGURA O PREÇO DO INGREDIENTE
